@@ -1,5 +1,5 @@
 from flask import Flask
-import main
+from py import main
 app = Flask(__name__)
 
 @app.route("/query/<iso>")
