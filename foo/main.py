@@ -18,6 +18,7 @@ def query(iso:str) :#-> HttpResponse:
         print("Data is stale")
 
         data = query_obj.query()
+        import ipdb; ipdb.set_trace()
         cache.set(iso, data)
 
     return display(data)
